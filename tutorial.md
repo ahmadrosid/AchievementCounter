@@ -2,7 +2,7 @@
 
 Dalam tutorial ini, kita akan membuat aplikasi Achievement Counter yang interaktif menggunakan React dan TypeScript. Aplikasi ini akan menampilkan counter yang bisa ditambah hingga 10, dan akan menampilkan animasi confetti ketika mencapai target.
 
-## Komponen Counter
+## Komponen `Counter.tsx`
 
 Mari kita mulai dengan membuat komponen Counter. Pertama, kita perlu mengimpor beberapa dependency yang akan kita gunakan:
 
@@ -147,7 +147,7 @@ Terakhir, kita tambahkan pesan selamat yang muncul ketika mencapai target:
 
 Pesan ini akan muncul dengan animasi bounce ketika counter mencapai 10.
 
-## Komponen App
+## Komponen `App.tsx`
 
 Sekarang mari kita integrasikan Counter ke dalam aplikasi utama. Pertama, kita siapkan struktur dasarnya:
 
