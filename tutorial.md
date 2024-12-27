@@ -92,6 +92,47 @@ Tombol ini memiliki:
 - Animasi hover dan transisi
 - Ikon Plus dari lucide-react
 
+Penjelasan setiap class Tailwind CSS yang digunakan pada button diatas:
+
+**Layout & Positioning:**
+- `flex` - Mengatur display flex
+- `items-center` - Align items center (vertical alignment)
+- `gap-2` - Memberikan gap/jarak 0.5rem antara child elements
+
+**Spacing:**
+- `px-8` - Padding horizontal 2rem
+- `py-4` - Padding vertical 1rem
+
+**Colors & Background:**
+- `bg-green-500` - Background color green (500 intensity)
+- `text-black` - Text color hitam
+
+**Typography:**
+- `font-semibold` - Font weight semibold
+
+**Border & Shape:**
+- `rounded-full` - Border radius maksimal (pill shape)
+
+**Hover Effects:**
+- `hover:bg-green-400` - Background berubah ke green-400 saat hover
+- `hover:scale-105` - Scale up 105% saat hover
+- `transform` - Enable transformations
+- `transition-all` - Transisi untuk semua properties
+- `duration-200` - Durasi transisi 200ms
+
+**Active & Focus States:**
+- `active:bg-green-600` - Background berubah ke green-600 saat active/click
+- `focus:outline-none` - Hapus outline default saat focus
+- `focus:ring-2` - Tambah ring dengan width 2px saat focus
+- `focus:ring-green-500` - Ring color green-500
+- `focus:ring-offset-2` - Ring offset 2px
+
+**Disabled State:**
+- `disabled:opacity-50` - Opacity 50% saat disabled
+- `disabled:cursor-not-allowed` - Cursor not-allowed saat disabled
+- `disabled:hover:scale-100` - Tidak ada scale effect saat hover dalam keadaan disabled
+- `disabled:hover:bg-green-500` - Tidak ada perubahan background saat hover dalam keadaan disabled
+
 ### Pesan Selamat
 
 Terakhir, kita tambahkan pesan selamat yang muncul ketika mencapai target:
@@ -152,19 +193,3 @@ Konten utama ini:
 - Mengatur posisi Counter di tengah layar
 - Memberikan background gelap dengan bayangan
 - Membuat tampilan responsif
-
-## Tips Pengembangan
-
-1. **Type Safety**:
-   - Manfaatkan TypeScript untuk menghindari bug
-   - Definisikan tipe untuk props dan state
-
-2. **Styling**:
-   - Gunakan Tailwind CSS untuk styling yang konsisten
-   - Perhatikan responsive design
-   - Tambahkan animasi untuk UX yang lebih baik
-
-3. **Performance**:
-   - Gunakan useCallback untuk fungsi yang di-pass sebagai props
-   - Hindari re-render yang tidak perlu
-   - Optimalkan animasi untuk performa yang baik
